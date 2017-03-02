@@ -1,0 +1,318 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+// Mixin
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+// Classes
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+// Usage as mixins
+.element {
+  .pull-left();
+}
+.another-element {
+  .pull-right();
+}
+// Classes
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as mixins
+.element {
+  .center-block();
+}
+
+// Usage
+.container {
+  .clearfix();
+}
+// Classes
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Usage as mixins
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}
+.dob-block {
+	padding:0 20px 0 20px;
+	width:70%;
+	height:25px;
+}
+.hooper {
+	width:50%;
+	height: 23px;
+	min-width:50%;
+}
+.left-beng {
+	width:50%;
+}
+/*block 1 begin*/
+.head{
+	margin:5px 10px 11px 12px;
+	padding:5px 15px 10px 6px;
+}
+.menubar{
+	margin:10px auto;
+	padding:2%;
+ }
+.text h1{
+	text-align:center;
+	margin:100px 0 0 0;
+	text-shadow:3px 2px 5px;
+	font-weight:bold;
+}
+.text .h1-2{
+	margin:5px 0 0 0;
+	text-shadow:3px 2px 7px;
+	font-weight:bold;
+}
+.btn_one{
+	border:solid 5px black;
+	background: rgb(239,240,242);
+}
+.btnstak{
+	float:right;
+	padding:0 5% 0 0;
+}
+.btntext{
+	padding:75px 1px 1px 1px;
+	float:right;
+}
+.head1{
+	float:left;
+	padding:10px auto;
+	
+
+}
+.head3{
+	float:right;
+	padding:10px auto;
+	
+}
+.header{
+	margin:0 75px 0 75px;
+	padding:2%;
+	height:658px;
+	background: rgb(239,240,242);
+	min-width:80%;
+}
+.colrgb{
+	background:#9decec;
+}
+/*block 1 over*/
+/*block 2 begin*/
+.block2-text{
+	text-align:center;
+	background:#f8fafa;
+	height:950px;
+	padding:2%;
+	margin:0 75px 0 75px;
+	min-width:80%;	
+}
+.block2-main-text{
+	padding:5px 0 100px 0;
+}
+.text-main{
+	font: normal 100% 'century gothic',sans-serif;
+	padding: 0px 25px 150px 50px;
+	text-align:center;
+	min-width:400px;
+}
+ul{
+	list-style:none;
+}
+li {
+	display:inline-block;
+	margin: 0 1px 0 1px;
+	background-color:#cdced2;
+	width:13px;
+	height:13px;
+	border-radius:4px;
+	float:center;
+}
+li.action:hover{
+	background-color:aqua;
+	color:aqua;
+}
+.block2-photo{
+	position:absolute;
+	min-width:400px;
+	min-height:400px;
+}
+.div-text{
+
+}
+/*block 2 over*/
+/*block 3 begin*/
+.block-3-head{
+	text-align:center;
+	padding:50px 0 100px 0;
+	min-width:400px;
+}
+.block-3-head h4{
+	opacity:0.7;
+}
+.position{
+	float:center;
+}
+.photo1{
+	padding:0 15px 10px 15px;
+	
+	max-width:400px;
+	height:auto;
+	display:inline-block;
+
+	
+
+}
+.photo2{
+	padding:0 22px 10px 22px;
+
+	float:none;
+	height:auto;
+
+	margin:0 auto;
+	display:inline-block;
+
+}
+.bk3-content1{
+	width:950px;
+	height:375px;
+}
+.bk3-content2{
+	width:550px;
+	height:375px; 
+}
+.div-photo{
+	margin:1%;		
+}
+
+/*block 3 over*/
+/*block 4 begin*/
+.block4-photo1 {    
+	
+}
+.block4-photo2 {
+
+}
+.block4-photo3 {
+	
+}
+.block4-images1 {
+	height:330px;
+	width:500px;
+	margin:3px 10px 3px 1%;
+}
+.photo1-1 {
+	position:relative;
+
+}
+.photo1-1:hover {
+	background-color:transparent;
+
+}
+.photo1-1 span{  
+position: absolute;  
+background-color: aqua;  
+height:330px;
+width:500px; 
+margin:3px 10px 3px 1%; 
+ 
+visibility: hidden;  
+color: black;  
+text-decoration: none;  
+
+}
+.photo1-1 span h1 {
+	
+	padding:30px 0 30px 50px;
+	font: normal 130% 'Baloo',sans-serif;
+	text-align:center;
+}
+.photo1-1 span p {
+	font: normal 130% 'Baloo',sans-serif;
+	text-align:center;
+	padding:0 33px 0 33px;
+}
+.photo1-1:hover span{  
+visibility: visible;  
+top: -159px;  
+left: 10px; 
+background-color:#71f6eb;
+opacity:0.7;
+}  
+.block4-images2 {
+	height:330px;
+	width:330px;
+	margin:3px 5px 3px 1%;
+}
+.block4-images3 {
+	height:310px;
+	width:510px;
+	margin:3px 5px 3px 1%;
+}
+.block4-images4 {
+	height:310px;
+	width:315px;
+	margin:3px 5px 3px 1%;
+}
+.block4-images5 {
+	height:310px;
+	width:350px;
+	margin:3px 5px 3px 1%;
+}
+.block4-images6 {
+	height:310px;
+	width:485px;
+	margin:3px 5px 3px 1%;
+}
+
+/*block 4 over*/
+/*block 5 begin*/
+.bloc{
+	text-align:center;
+	padding:50px 0 100px 0;
+	min-width:400px;
+	height:250px;
+}
+.bloc h4 {
+	opacity:0.7;
+}
+
+.block5-photo1 {
+	margin:1%;
+}
+.block5-photo2 {
+	margin:1%;
+	height:50%;
+}
+/*block 5 over*/
